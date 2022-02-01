@@ -1,6 +1,6 @@
 import react, {Component} from 'react';
 import Header from '../Common/Header';
-
+import image from '../assets/img/Image';
 
 class Home extends Component{
     render(){
@@ -10,7 +10,9 @@ class Home extends Component{
                     title="Welcome to our studio"
                     subtitle="It's nice to meet you"
                     buttonText="Welcome"
-                    link="img/header-bg.jpg"
+                    image={image}
+                    link="/services"
+                    showButton={true}
                 />
             </div>
         );
