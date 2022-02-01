@@ -1,16 +1,17 @@
 import react, {Component} from 'react';
+import Header from '../Common/Header';
+
 
 class Home extends Component{
     render(){
         return (
             <div>
-                <header class="masthead">
-                    <div class="container">
-                        <div class="masthead-subheading">Welcome To Our Studio!</div>
-                        <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
-                    </div>
-                </header>
+                <Header 
+                    title="Welcome to our studio"
+                    subtitle="It's nice to meet you"
+                    buttonText="Welcome"
+                    link="img/header-bg.jpg"
+                />
             </div>
         );
     }

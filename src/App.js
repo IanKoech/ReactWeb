@@ -6,21 +6,22 @@ import PageWrapper from './Component/PageWrapper';
 import Home from './Component/Pages/Home';
 import About from './Component/Pages/About';
 
+
 class App extends Component{
   render(){
     return (
       <Router>
         <PageWrapper>
           <Routes>
-
-            <Route path="/" element={<Home/>}/>
+            <Route exact={true} path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
-
+    
           </Routes>
         </PageWrapper>
       </Router>
     );
   }
 }
+
 
 export default App;
