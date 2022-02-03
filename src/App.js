@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import PageWrapper from './Component/PageWrapper';
 import Home from './Component/Pages/Home';
 import About from './Component/Pages/About';
-
+import Services from './Component/Common/Services';
 
 class App extends Component{
   render(){
@@ -15,7 +15,7 @@ class App extends Component{
           <Routes>
             <Route exact={true} path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
-    
+            <Route path="/services" element={<Services/>}/>
           </Routes>
         </PageWrapper>
       </Router>
