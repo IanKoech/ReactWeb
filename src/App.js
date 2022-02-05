@@ -13,7 +13,7 @@ class App extends Component{
       <Router>
         <PageWrapper>
           <Routes>
-            <Route exact={true} path="/" element={<Home/>}/>
+            <Route exact path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/services" element={<Services/>}/>
           </Routes>
