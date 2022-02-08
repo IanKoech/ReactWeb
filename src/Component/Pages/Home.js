@@ -1,5 +1,8 @@
 import react, {Component} from 'react';
+//Pages
 import Header from '../Common/Header';
+import Services from '../Common/Services';
+
 import image from '../assets/img/Image';
 
 class Home extends Component{
@@ -14,6 +17,7 @@ class Home extends Component{
                     link="/services"
                     showButton={true}
                 />
+                <Services/>
             </div>
         );
     }
