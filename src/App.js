@@ -7,10 +7,13 @@ import Home from './Component/Pages/Home';
 import About from './Component/Pages/About';
 import Services from './Component/Common/Services';
 
+//Background image
+import background from './Component/assets/img/header-bg.jpg';
+
 class App extends Component{
   render(){
     return (
-      <Router>
+      <Router style={{backgroundImage: background}}>
         <PageWrapper>
           <Routes>
             <Route exact path="/" element={<Home/>}/>

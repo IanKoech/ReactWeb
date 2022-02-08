@@ -12,7 +12,7 @@ const services = [
 class Services extends Component{
     render(){
         return (
-            <section className="page-section" id="services">
+            <section className="page-section" id="services" style={{backgroundImage: this.props.image}}>
                 <div className="container">
                     <div className="text-center">
                         <h2 className="section-heading text-uppercase">Services</h2>
@@ -20,7 +20,7 @@ class Services extends Component{
                     </div>
                     <div className="row text-center">
                         {services.map((service, index) => {
-                            return (<SingleService {...service} key={index}/>)
+                            return (<SingleService {...service} key="{index}"/>)
                         })}
                     </div>
                 </div>
