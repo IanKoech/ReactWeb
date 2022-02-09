@@ -1,14 +1,15 @@
-import react, {Component} from 'react';
-//Pages
+import React, {Component} from 'react';
+//Re-usable components
 import Header from '../Common/Header';
 import Services from '../Common/Services';
-
+import Portfolio  from '../Common/Portfolio';
+//background image
 import image from '../assets/img/Image';
 
 class Home extends Component{
     render(){
         return (
-            <div>
+            <div style={{backgroundImage:image}}>
                 <Header 
                     title="Welcome to our studio"
                     subtitle="It's nice to meet you"
@@ -18,6 +19,7 @@ class Home extends Component{
                     showButton={true}
                 />
                 <Services/>
+                <Portfolio/>
             </div>
         );
     }

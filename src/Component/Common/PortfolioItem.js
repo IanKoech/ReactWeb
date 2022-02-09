@@ -1,4 +1,4 @@
-import react, {Component} from 'react';
+import React, {Component} from 'react';
 
 class PortfolioItem extends Component{
     render(){
@@ -9,7 +9,7 @@ class PortfolioItem extends Component{
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img className="img-fluid" src={this.props.image} alt="..." />
+                        <img className="img-fluid" src={this.props.image} alt="Portfolio images" />
                     </a>
                     <div className="portfolio-caption">
                         <div className="portfolio-caption-heading">{this.props.title}</div>

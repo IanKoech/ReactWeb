@@ -1,4 +1,4 @@
-import react, {Component} from 'react';
+import React, {Component} from 'react';
 import SingleService  from './SingleService';
 
 const services = [
@@ -20,7 +20,7 @@ class Services extends Component{
                     </div>
                     <div className="row text-center">
                         {services.map((service, index) => {
-                            return (<SingleService {...service} key="{index}"/>)
+                            return (<SingleService {...service} key={index}/>)
                         })}
                     </div>
                 </div>

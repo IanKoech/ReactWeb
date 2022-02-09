@@ -1,6 +1,5 @@
-import react, {Component} from 'react';
+import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import image from './assets/img/Image';
 
 class PageWrapper extends Component{
 

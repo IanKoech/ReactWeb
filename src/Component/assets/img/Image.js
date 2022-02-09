@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import image from './header-bg.jpg';
 
 function Image(){
