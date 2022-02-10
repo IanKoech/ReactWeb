@@ -5,12 +5,12 @@ class Header extends Component{
     render(){
         return (
             <div>
-                <header class="masthead" style={{backgroundImage : this.props.image} }>
-                    <div class="container">
-                        <div class="masthead-subheading">{this.props.title}</div>
-                        <div class="masthead-heading text-uppercase">{this.props.subtitle}</div>
+                <header className="masthead" style={{backgroundImage : this.props.image} }>
+                    <div className="container">
+                        <div className="masthead-subheading">{this.props.title}</div>
+                        <div className="masthead-heading text-uppercase">{this.props.subtitle}</div>
                         {this.props.showButton && 
-                            <Link class="btn btn-primary btn-xl text-uppercase" to={this.props.link}>{this.props.buttonText}</Link>
+                            <Link className="btn btn-primary btn-xl text-uppercase" to={this.props.link}>{this.props.buttonText}</Link>
                         }
                         
                     </div>

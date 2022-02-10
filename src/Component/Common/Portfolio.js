@@ -2,16 +2,22 @@ import React, {Component} from 'react';
 
 //Common
 import PortfolioItem from './PortfolioItem';
-//Images
-import portfolioImages from '../assets/img/PortfolioImages';
+
+//Image3
+import imageOne from '../assets/img/ImageOne';
+import imageTwo from '../assets/img/ImageTwo';
+import imageThree from '../assets/img/ImageThree';
+import imageFour from '../assets/img/ImageFour';
+import imageFive from '../assets/img/ImageFive';
+import imageSix from '../assets/img/ImageSix';
 
 const portfolio = [
-    {title:'Threads', subtitle:'Illustration', image:portfolioImages.imageOne},
-    {title:'Explore', subtitle:'Graphic design', image:portfolioImages.imageTwo},
-    {title:'Finish', subtitle:'Identity', image:portfolioImages.imageThree},
-    {title:'Lines', subtitile:'Branding', image:portfolioImages.imageFour},
-    {title:'Southwest', subtitle:'Website design', image:portfolioImages.imageFive},
-    {title:'Window', subtitle:'Photography', image:portfolioImages.imageSix}
+    {title:'Threads', subtitle:'Illustration', image:imageOne},
+    {title:'Explore', subtitle:'Graphic design', image:imageTwo},
+    {title:'Finish', subtitle:'Identity', image:imageThree},
+    {title:'Lines', subtitile:'Branding', image:imageFour},
+    {title:'Southwest', subtitle:'Website design', image:imageFive},
+    {title:'Window', subtitle:'Photography', image:imageSix}
 ];
 
 class Portfolio extends Component{
@@ -25,7 +31,7 @@ class Portfolio extends Component{
                     </div>
                     <div className="row">
                        {portfolio.map(({item, index}) => {
-                           return (<PortfolioItem {...item} key={index}/>);
+                           return <PortfolioItem {...item} key={index}/>;
                        })}
                     </div>
                 </div>
