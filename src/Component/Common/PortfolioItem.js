@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import image from '../assets/img/portfolio/1.jpg';
-import image2 from '../assets/img/portfolio/2.jpg';
+
 
 class PortfolioItem extends Component{
     render(){
@@ -11,9 +10,8 @@ class PortfolioItem extends Component{
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                         </div>
-                        {/* <img className="img-fluid" src={this.props.image} alt="" /> */}
-                        <img className="img" src={image} alt=""/>
-                        <img className="img" src={image2} alt=""/>
+                        <img className="img-fluid" src={this.props.image} alt="" />
+                        
                     </a>
                     <div className="portfolio-caption">
                         <div className="portfolio-caption-heading">{this.props.title}</div>
