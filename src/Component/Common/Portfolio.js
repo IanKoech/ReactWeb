@@ -30,7 +30,7 @@ class Portfolio extends Component{
                         <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                     </div>
                     <div className="row">
-                       {portfolio.map(({item, index}) => {
+                       {portfolio.map((item, index) => {
                            return <PortfolioItem {...item} key={index}/>;
                        })}
                     </div>

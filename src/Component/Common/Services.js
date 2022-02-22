@@ -12,7 +12,7 @@ const services = [
 class Services extends Component{
     render(){
         return (
-            <section className="page-section" id="services" style={{backgroundImage: this.props.image}}>
+            <section className="page-section" id="services">
                 <div className="container">
                     <div className="text-center">
                         <h2 className="section-heading text-uppercase">Services</h2>
