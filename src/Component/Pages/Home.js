@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Header from '../Common/Header';
 import Services from '../Common/Services';
 import Portfolio  from '../Common/Portfolio';
+import Team from '../Common/Team';
 //background image
 import image from '../assets/img/Image';
 
@@ -20,6 +21,7 @@ class Home extends Component{
                 />
                 <Services/>
                 <Portfolio/>
+                <Team/>
             </div>
         );
     }

@@ -7,6 +7,8 @@ import Home from './Component/Pages/Home';
 import About from './Component/Pages/About';
 import Services from './Component/Common/Services';
 import Portfolio from './Component/Common/Portfolio';
+import Team from './Component/Common/Team';
+import Contact from './Component/Pages/Contact';
 
 
 class App extends Component{
@@ -19,6 +21,8 @@ class App extends Component{
             <Route path="/about" element={<About/>}/>
             <Route path="/services" element={<Services/>}/>
             <Route path="/portfolio" element={<Portfolio/>}/>
+            <Route path="/team" element={<Team/>}/>
+            <Route path="/contact" element={<Contact/>}/>
           </Routes>
         </PageWrapper>
       </Router>
