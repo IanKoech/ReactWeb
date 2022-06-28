@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Field from '../Common/Field';
+import {withFormik} from 'formik';
 
 const fields = {
     sections : [
@@ -15,20 +16,7 @@ const fields = {
 };
 
 class Contact extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            name:"",
-            email:"",
-            phone:"",
-            message:""
-        }
-    }
-
-    submitForm(e){
-        alert("The form was successfully submitted");
-    }
-
+    
     render(){
         return (
             <section className="page-section" id="contact">
@@ -38,7 +26,7 @@ class Contact extends Component{
                     <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form onSubmit={this.props.handleSubmit} id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div className="row align-items-stretch mb-5">
                         {fields.sections.map((section, sectionIndex) => {
                             console.log("Rendering section ",sectionIndex, " with ",section);
@@ -48,10 +36,12 @@ class Contact extends Component{
                                         return <Field 
                                            {...field}
                                            key={i}
-                                           value={this.state[field.name]}
-                                           onChange={e => this.setState({
-                                               [field.name]: e.target.value
-                                            })}
+                                           value={this.props.values[field.name]}
+                                           name={field.name}
+                                           onChange={this.props.handleChange}
+                                           onBlur={this.props.handleBlur}
+                                           touched={(this.props.touched[field.name])}
+                                           errors={this.props.errors[field.name]}
                                         />
                                     })}
                                 </div>
@@ -84,4 +74,25 @@ class Contact extends Component{
     }
 }
 
-export default Contact;
+export default withFormik({
+    mapPropsToValues : () => ({
+        name:'',
+        email:'',
+        phone:'',
+        message:''
+    }),
+    validate : values => {
+        const errors = {};
+        Object.keys(values).map(val => {
+            if(!values[val]){
+                errors[val] = "Required";
+            }
+        })
+
+        return errors;
+    },
+    handleSubmit : (values, {setSubmitting}) => {
+        console.log('The values', JSON.stringify(values));
+        alert("The form has been successfully submitted");
+    }
+})(Contact);
