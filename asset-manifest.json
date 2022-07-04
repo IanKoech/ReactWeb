@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ReactWeb/static/css/main.e6c13ad2.css",
+    "main.js": "/ReactWeb/static/js/main.98a55b69.js",
+    "static/js/787.a53fd439.chunk.js": "/ReactWeb/static/js/787.a53fd439.chunk.js",
+    "static/media/header-bg.jpg": "/ReactWeb/static/media/header-bg.050c4ecaaa8ce224a5ca.jpg",
+    "static/media/6.jpg": "/ReactWeb/static/media/6.998ef74039a69a6143ac.jpg",
+    "static/media/2.jpg": "/ReactWeb/static/media/2.96177e9474346bfa04d0.jpg",
+    "static/media/4.jpg": "/ReactWeb/static/media/4.220d1cbad84ddbb70d26.jpg",
+    "static/media/1.jpg": "/ReactWeb/static/media/1.2fb14c857750c2a3bf5f.jpg",
+    "static/media/3.jpg": "/ReactWeb/static/media/3.b0ffea2abdf2687d38d8.jpg",
+    "static/media/5.jpg": "/ReactWeb/static/media/5.cb53053784f4a5e2434d.jpg",
+    "index.html": "/ReactWeb/index.html",
+    "main.e6c13ad2.css.map": "/ReactWeb/static/css/main.e6c13ad2.css.map",
+    "main.98a55b69.js.map": "/ReactWeb/static/js/main.98a55b69.js.map",
+    "787.a53fd439.chunk.js.map": "/ReactWeb/static/js/787.a53fd439.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.98a55b69.js"
+  ]
+}
