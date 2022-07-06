@@ -13,7 +13,7 @@ class Home extends Component{
             <div style={{backgroundImage:image}}>
                 <Header 
                     title="Welcome to our studio"
-                    subtitle="It's nice to meet you"
+                    subtitle="It's a pleasure meeting you"
                     buttonText="Welcome"
                     image={image}
                     link="/services"

@@ -23,7 +23,7 @@ class Contact extends Component{
             <div className="container">
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">Contact Us</h2>
-                    <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 className="section-subheading text-muted">Get in touch with us by filling in the form below</h3>
                 </div>
             
                 <form onSubmit={this.props.handleSubmit} id="contactForm" data-sb-form-api-token="API_TOKEN">
